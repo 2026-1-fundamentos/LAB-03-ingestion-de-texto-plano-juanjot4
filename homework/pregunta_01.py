@@ -41,7 +41,6 @@ def pregunta_01():
     data["principales_palabras_clave"] = (
         data["principales_palabras_clave"].str.replace(r'\s+', ' ', regex=True).str.strip().str.replace(r'\s*,\s*', ', ').str.replace(".", "")
         )
-
     return data
 
 
